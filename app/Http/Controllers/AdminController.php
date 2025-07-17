@@ -39,7 +39,8 @@ class AdminController extends Controller
 
     public function customerDashboard()
     {
-        return view('customer.index');
+        $products = \App\Models\Product::with('user')->get();
+        return view('customer.index', compact('products'));
     }
 
     public function sellerDashboard()
