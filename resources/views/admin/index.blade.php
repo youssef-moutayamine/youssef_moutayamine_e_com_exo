@@ -32,7 +32,7 @@
                                 <option value="seller" @if($user->hasRole('seller')) selected @endif>seller</option>
                                 <option value="customer" @if($user->hasRole('customer')) selected @endif>customer</option>
                             </select>
-                            <button type="submit" class="text-sm bg-blue-500 hover:bg-blue-700 text-white py-1 px-2 rounded focus:outline-none focus:shadow-outline">Save</button>
+                            <button type="submit" class="text-sm bg-green-500 hover:bg-green-700 text-white py-1 px-2 rounded focus:outline-none focus:shadow-outline">Save</button>
                         </form>
                     </td>
                     <td class="p-3 px-5 flex justify-end">

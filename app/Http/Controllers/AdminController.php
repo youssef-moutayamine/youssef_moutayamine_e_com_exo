@@ -36,4 +36,14 @@ class AdminController extends Controller
         $user->syncRoles([$request->role]);
         return back();
     }
+
+    public function customerDashboard()
+    {
+        return view('customer.index');
+    }
+
+    public function sellerDashboard()
+    {
+        return view('seller.index');
+    }
 } 
